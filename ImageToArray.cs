@@ -46,7 +46,7 @@ namespace ParseImage
             //Schrijf eerste deel van tekstbestand (array declaration)
             //
             //de writes zijn uiteengehaald omdat er anders een error kwam om de een of andere reden
-            sw.Write("byte image[");
+            sw.Write("byte image");
             sw.Write("[{0}]",height);
             sw.Write("[{0}]", width);
             sw.Write("[3] = {");
@@ -66,7 +66,7 @@ namespace ParseImage
                     sw.Write("{0}", kleur.B);
                     sw.Write("}");
                 }
-                if(a != 31)
+                if(a != height-1)
                 {
                     sw.WriteLine(",},");
                 }
