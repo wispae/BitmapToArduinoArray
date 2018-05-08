@@ -64,11 +64,18 @@ namespace ParseImage
                     sw.Write("{0},", kleur.R);
                     sw.Write("{0},", kleur.G);
                     sw.Write("{0}", kleur.B);
-                    sw.Write("},");
+                    if(b != width - 1)
+                    {
+                        sw.Write("}, ");
+                    }
+                    else
+                    {
+                        sw.Write("}");
+                    }
                 }
                 if(a != height-1)
                 {
-                    sw.WriteLine(",},");
+                    sw.WriteLine("},");
                 }
                 else
                 {
