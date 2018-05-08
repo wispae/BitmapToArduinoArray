@@ -64,7 +64,7 @@ namespace ParseImage
                     sw.Write("{0},", kleur.R);
                     sw.Write("{0},", kleur.G);
                     sw.Write("{0}", kleur.B);
-                    sw.Write("}");
+                    sw.Write("},");
                 }
                 if(a != height-1)
                 {
